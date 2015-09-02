@@ -1,0 +1,86 @@
+.item {
+    float: left;
+    line-height: 1em;
+    position: relative;
+}
+
+
+.grid-sizer { width: 20%; }
+.item { width: 20%; }
+
+
+@media screen and (max-width: 1224px) {
+  /* 10 columns for larger screens */
+  .grid-sizer { width: 33.33%; }
+  .item { width: 33.33%; }
+}
+
+@media screen and (max-width: 720px) {
+  /* 10 columns for larger screens */
+  .grid-sizer { width: 50%; }
+  .item { width: 50%; }
+}
+
+@media screen and (max-width: 480px) {
+  /* 10 columns for larger screens */
+  .grid-sizer { width: 100%; }
+  .item { width: 100%; }
+}
+
+.image{
+    display: block;
+    margin: 0;
+    max-width: 100%;
+}
+
+.image:after {
+    clear:both;
+}
+
+.overlay {
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    width: 100%;
+}
+
+.overlay .title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.overlay .description {
+    background-color: rgba(0,0,0,0.80);
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.overlay .description p {
+    margin: 20px;
+}
+
+.item:hover .overlay {
+    display: block;
+}
+
+.text-header{
+	background-color: @color-base;
+	background: @color-base;
+	height: 400px;
+	max-height: 500px;
+	padding: 30px;
+	width: 100%;
+
+	a{
+		text-decoration: none;
+	}
+	
+}

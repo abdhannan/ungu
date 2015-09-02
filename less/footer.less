@@ -1,0 +1,81 @@
+// foooter style
+.main-footer{
+	-webkit-border:none;
+	background-color: @color-two;
+	background: @color-two;
+	overflow: hidden;
+	padding: 24px;
+}
+.icon-social{
+	background: url(../../img/sosmed-sprite1.png);
+	width: 84px;
+	height: 84px;
+}
+.list-social li a{
+	display: block;
+	width: 84px;
+	height: 84px;
+}
+a.fb{
+	background-position: 924px 84px;
+	&:hover{
+		background-position: 924px 168px;
+	}
+}
+a.twt{
+	background-position: 252px 84px;
+	&:hover{
+		background-position: 252px 168px;
+	}
+}
+a.gog{
+	background-position: 672px 84px;
+	&:hover{
+		background-position: 672px 168px;
+	}
+}
+a.sky{
+	background-position: 336px 84px;
+	&:hover{
+		background-position: 336px 168px;
+	}
+}
+.second-footer{
+	-webkit-font-smoothing: antialiased;
+	background-color: @color-base;
+	background: @color-base;
+	border:none;
+	overflow: hidden;
+	padding: 20px;
+
+	a,p{
+		@warna:rgb(149, 149, 149);
+		color: @warna;
+		text-decoration: none;
+	}
+}
+
+// button-hannan
+.btn-hannan{
+	@color-white:rgb(226, 226, 226);
+	background-color: @color-base;
+	background: @color-base;
+	border-color: @color-base;
+	border-radius: 0px;
+	color: @color-white;
+
+	&:hover{
+		@color-btn-hover:rgb(199, 178, 154);
+		background-color: @color-btn-hover;
+		background: @color-btn-hover;
+		border-color: @color-btn-hover;
+		border-radius: 0px;
+	}
+}
+.btn &:hover{
+		background-color: @color-btn-hover;
+		background: @color-btn-hover;
+		border-color: @color-btn-hover;
+		border-radius: 0px;
+	@color-btn-hover:rgb(199, 178, 154);
+}
